@@ -12,13 +12,24 @@ An open-source Flask API that retrieves book information from the [Babelio](http
 
 ### Prerequisites
 
-### Installation Steps
+- **Python** version 3.13 or above
+- **Poetry** to install dependencies
 
+### Installation and Running Steps
+
+
+```
+git clone https://github.com/Spaames/babelio-scraping-api.git
+cd babelio-scraping-api
+poetry update
+python3.13 app.py
+```
+
+By default, the app serves on localhost and on basic flask port (5000).
+Edit the app.py to change this.
 
 ## Endpoints
 
-
-## Contributing
-
-## Licence
+- **/search** : GET -- params : query=<anything> --> return the result of the search field as a list of book (title, author, cover and book_url)
+- **/book** : GET -- params : query=<book_url> --> return data for a specific book url, 
 
