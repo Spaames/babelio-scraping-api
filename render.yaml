@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: flask-api
+    env: python
+    plan: free
+    buildCommand: "poetry install"
+    startCommand: "poetry run gunicorn -w 4 -b 0.0.0.0:10000 src:app"
+    envVars:
+      - key: FLASK_ENV
+        value: production
