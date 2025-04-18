@@ -28,6 +28,9 @@ python3.13 app.py
 By default, the app serves on localhost and on basic flask port (5000).
 Edit the app.py to change this.
 
+### Docker
+You can use the dockerfile to build docker image or you can get it here : [babelio-scraping-api](https://hub.docker.com/layers/remidupuy/babelio-scraping-api/latest/images/sha256:10fd35d3e1b1a3b3f3aa9913cf9bd21a888f7695249cae38cc63284eb46a2339?uuid=cfc78975-47c1-43a8-bcb7-dbee6874def2%0A)
+
 ## Endpoints
 
 - **/search** : GET -- params : query=<anything> --> return the result of the search field as a list of book (title, author, cover and book_url)
